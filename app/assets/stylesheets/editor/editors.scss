@@ -1,0 +1,54 @@
+trix-editor {
+  height:700px;
+  width:700px;
+  overflow: auto;
+  border-color: white;
+  font-size: 20px;
+  font-family: serif;
+}
+
+trix-toolbar {
+  text-align: center; 
+  display: none;
+}
+
+.formatted_content {
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: black;
+  background-color: #fff;
+
+}
+
+label {
+	display: none;
+}
+
+body {
+  background-color: white;
+}
+
+.new_editor {
+  background-color: white;
+}
+
+.docx_save {
+  text-align: center;
+}
+
+.btn-success {
+  background-color: #999;
+  border-color: #999;
+  margin: 10px;
+  box-shadow: 0 3px 0 0 #6b6a6a;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+  background-color: #f05f40;
+  border-color: #f05f40;
+  box-shadow: 0 3px 0 0 #d84525;
+}
+

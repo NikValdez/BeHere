@@ -1,0 +1,49 @@
+<% provide(:title, 'Pomodoro') %>
+<%= render 'pomodoro_navbar' %>
+<body onload='setup()'>
+  <h2 class='title'>POMODORO</h2>
+
+  
+  <div class='buttons'>
+    <button class="btn start" onclick='start()'>
+      <span class="glyphicon glyphicon-play"></span>
+    </button>
+    <button class="btn pause" onclick='pause()'>
+      <span class="glyphicon glyphicon-pause"></span
+    </button>
+    <button class="btn reset" onclick='reset()'>
+      <span class="glyphicon glyphicon-repeat"></span>
+    </button>
+  </div>
+      
+      
+  <div class='timer-div'>
+    <span id='timer'>25:00</span>
+    <div id='timer-status' class='pomodoro-color'></div>
+  </div>
+      
+      
+  <div class='time-controls'>
+    <div class='change-time'>
+      <p>Session</p>
+      <span class="btn glyphicon glyphicon-minus" onclick='chDur(-1)' aria-hidden="true"></span>
+      <span id='duration'>25</span>
+      <span class="btn glyphicon glyphicon-plus" onclick='chDur(1)' aria-hidden="true"></span>
+    </div>
+    <div class='change-time'>
+      <p>Break</p>
+      <span class="btn glyphicon glyphicon-minus" onclick='chBrk(-1)' aria-hidden="true"></span>
+      <span id='break'>25</span>
+      <span class="btn glyphicon glyphicon-plus" onclick='chBrk(1)' aria-hidden="true"></span>
+    </div>
+  </div> 
+</body>
+
+<footer>
+  <div class="row">
+      <div class="col-lg-12">
+          <p>Copyright &copy; BeHere 2017</p>
+      </div>
+  </div>
+  <!-- /.row -->
+</footer>

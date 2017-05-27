@@ -1,0 +1,165 @@
+<% provide(:title, 'Music') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<title>Music</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/4-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<%= render 'music_navbar' %>
+<body>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Music
+                    <small>to Focus</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Beta.mp3", class: "audio-play1", preload: "metadata" %>
+                    <p class="btn btn-primary audioButton1">Play</p>
+                    <p class="btn btn-warning stopButton1">Stop</p>
+                   
+
+                    <img class="img-responsive" src="/assets/creative/Beta.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Alpha.mp3", class: "audio-play2", preload: "none" %>
+                    <p class="btn btn-primary audioButton2">Play</p>
+                    <p class="btn btn-warning stopButton2">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/Alpha.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item3">
+                   <%= audio_tag "Cafe.mp3", class: "audio-play3", preload: "none" %>
+                    <p class="btn btn-primary audioButton3">Play</p>
+                    <p class="btn btn-warning stopButton3">Stop</p>
+                   
+
+                    <img class="img-responsive" src="/assets/creative/Cafe.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Classical.mp3", class: "audio-play4", preload: "none" %>
+                    <p class="btn btn-primary audioButton4">Play</p>
+                    <p class="btn btn-warning stopButton4">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/Classical.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Nature.mp3", class: "audio-play5", preload: "none" %>
+                    <p class="btn btn-primary audioButton5">Play</p>
+                    <p class="btn btn-warning stopButton5">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/Nature.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Piano.mp3", class: "audio-play6", preload: "none" %>
+                    <p class="btn btn-primary audioButton6">Play</p>
+                    <p class="btn btn-warning stopButton6">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/Piano.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Rain.mp3", class: "audio-play7", preload: "none" %>
+                    <p class="btn btn-primary audioButton7">Play</p>
+                    <p class="btn btn-warning stopButton7">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/Rain.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Spa.mp3", class: "audio-play8", preload: "none" %>
+                    <p class="btn btn-primary audioButton8">Play</p>
+                    <p class="btn btn-warning stopButton8">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/Spa.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "UpTempo.mp3", class: "audio-play9", preload: "none" %>
+                    <p class="btn btn-primary audioButton9">Play</p>
+                    <p class="btn btn-warning stopButton9">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/UpTempo.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Waves.mp3", class: "audio-play10", preload: "none" %>
+                    <p class="btn btn-primary audioButton10">Play</p>
+                    <p class="btn btn-warning stopButton10">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/Waves.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "WhiteNoise.mp3", class: "audio-play11", preload: "none" %>
+                    <p class="btn btn-primary audioButton11">Play</p>
+                    <p class="btn btn-warning stopButton11">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/WhiteNoise.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                   <%= audio_tag "Accoustic.mp3", class: "audio-play12", preload: "none" %>
+                    <p class="btn btn-primary audioButton12">Play</p>
+                    <p class="btn btn-warning stopButton12">Stop</p>
+                    <img class="img-responsive" src="/assets/creative/Accoustic.png" alt="">
+                    <%= render 'play_music' %>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; BeHere 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
