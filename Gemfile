@@ -21,6 +21,8 @@ gem 'responders'
 gem 'htmltoword'
 gem 'caracal-rails'
 gem 'bcrypt', '~> 3.1.7'
+gem 'font-awesome-sass'
+
 
 group :development, :test do
   gem 'sqlite3'	
