@@ -22,7 +22,7 @@ gem 'caracal-rails'
 gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.3'
+  gem 'sqlite3'	
   gem 'byebug', platform: :mri
 end
 
