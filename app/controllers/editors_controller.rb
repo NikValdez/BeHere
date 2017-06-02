@@ -3,9 +3,9 @@ class EditorsController < ApplicationController
 
   # GET /editors
   # GET /editors.json
-  def index
-    @editors = Editor.all
-  end
+  # def index
+  #   @editor = Editor.all
+  # end
 
   # GET /editors/1
   # GET /editors/1.json
