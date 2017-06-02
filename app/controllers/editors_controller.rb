@@ -11,6 +11,7 @@ class EditorsController < ApplicationController
   # GET /editors/1.json
   def show
     send_data @editor.content.gsub(/(&nbsp;)|<\/?[^>]+>/, ''), :filename => 'BeHere.docx'
+    @editor = Editor.find(params[:id])
   end
 
   # GET /editors/new
