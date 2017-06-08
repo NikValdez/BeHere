@@ -1,4 +1,5 @@
 class PomodorosController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_pomodoro, only: [:show, :edit, :update, :destroy]
 
   # GET /pomodoros

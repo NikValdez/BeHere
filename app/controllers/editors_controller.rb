@@ -1,5 +1,7 @@
 class EditorsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_editor, only: [:show, :edit, :update, :destroy]
+
 
   # GET /editors
   # GET /editors.json

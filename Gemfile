@@ -22,6 +22,7 @@ gem 'htmltoword'
 gem 'caracal-rails'
 gem 'bcrypt', '~> 3.1.7'
 gem 'font-awesome-sass'
+gem 'devise'
 
 
 group :development, :test do

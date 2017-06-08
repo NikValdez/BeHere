@@ -157,7 +157,7 @@ function triggerAlarm() {
   });
 
   $('<source>', {
-    src: '/assets/one_chime.mp3'
+    src: 'https://s3-us-west-2.amazonaws.com/behereassets/one_chime.mp3'
   }).appendTo($audio);
 
   $("body").append($audio);

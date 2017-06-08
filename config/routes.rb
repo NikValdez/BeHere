@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+	root 'creatives#index'
+    devise_for :users
   	resources :pomodoros
   	resources :editors
-	root 'creatives#index'
 	get 'listen/music'
 end
