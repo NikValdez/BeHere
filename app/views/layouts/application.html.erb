@@ -9,8 +9,21 @@
   </head>
 
   <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<div class="notice-wrapper">
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+</div>
+
     <%= yield %>
+<script>
+	$(document).ready(function() {
+		setTimeout(function() {
+			$(".notice-wrapper").fadeOut("slow", function() {
+				$this.remove();
+			});
+		}, 4500 );
+	});
+</script>
+
   </body>
 </html>
